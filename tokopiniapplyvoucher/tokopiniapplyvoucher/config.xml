@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>tokopiniapplyvoucher</name>
+	<displayName><![CDATA[TokoPini Apply Voucher]]></displayName>
+	<version><![CDATA[1.0.1]]></version>
+	<description><![CDATA[Apply TokoPini Vouchers.]]></description>
+	<author><![CDATA[TokoPini]]></author>
+	<tab><![CDATA[others]]></tab>
+	<confirmUninstall><![CDATA[No TokoPini Apply Voucher Integration? :(]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>
