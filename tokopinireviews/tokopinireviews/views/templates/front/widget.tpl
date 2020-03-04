@@ -4,7 +4,14 @@
 *  @copyright  2019 TokoPini
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *}
-<div class="tokopinireviews-reviews-widget"><script language="javascript"> var objJson = {$data nofilter};</script></div>
+<div class="tokopinireviews-reviews-widget">
+	<script language="javascript"> 
+	window.addEventListener('load', function() {
+		var objJson = {$data nofilter}; 
+		changePage(1, objJson);
+	})
+	</script>
+</div>
 <div class="stickysidebar" id="open-modal" data-triger="modal-1">
     <p>{$tabContent nofilter}</p>
 </div>
@@ -22,4 +29,3 @@
 	  </div>
 	</div>
 </div>
-<script language="javascript"> changePage(1, objJson);</script>
