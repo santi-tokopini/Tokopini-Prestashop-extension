@@ -8,13 +8,14 @@
 	overflow: auto;
 	width: 2.5%;
 	/*! height: 25vh; */
-	top: 45%;
+	top: 30%;
 	z-index: 99999999999999;
 	text-orientation: mixed;
 	writing-mode: vertical-rl; 
 	cursor: pointer;
-	left: 0px;
+	right: 18px;
 	display: flex;
+        /*align-items: center; /*Centra horizontalmente el texto en la barra de valoraciones (necesita display: flex previamente)*/
 }
 .modal-wrap {
   background: rgba(0, 0, 0, 0.7);
@@ -132,3 +133,31 @@
   width: 20px;
   display:block;
 }
+/* Para cambiar CSS en dispositivpos móviles*/
+
+/* La siguiente función cambia los valores de la barra de valoraciones (en dispositivos móviles)*/ 
+
+@media only screen and (max-width: 991px) {
+   .stickysidebar {
+	width: 7%; /*Ancho de la barra*/
+	top: 42.5%; /*Distancia desde la parte más superior de la web*/
+	right: 15px; /*Posición derecha : Distancia desde la parte más a la derecha de la web*/
+	align-items: center; /*centra horizontalmente el texto de la barra de valoraciones (necesita display: flex previamente)*/
+}
+}
+
+
+/* Medidas para dispositivos móviles:
+
+Con la función: @media only screen and (max-width: 991px)  Puedes asignar valores específicos para pantallas de anchos inferiores o iguales a 991PX (para este caso). Puedes modificar el valor PX por el ancho de pantalla que desees.
+
+En vez de utilizar los valores que se nos ocurran para los anchos de diferentes pantallas, se han definido ciertos valores para determinar el tipo de pantalla que se está usando:
+
+Hasta 575px son teléfonos móviles en modo vertical.
+De 576px a 767px son teléfonos móviles en modo horizontal.
+De 768px a 991px son tabletas.
+De 992px a 1199px son pantallas de escritorio normales.
+1200px o más son pantallas grandes como televisores.
+
+
+*/
